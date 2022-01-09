@@ -1,0 +1,21 @@
+<h1> Binocular Names and Prices </h1>
+{% for keys, values in binocs.items %}
+  <p style="text-align:left;">
+    {{keys}}
+    <span style="text-align:left">
+      -----${{values}}
+    </span>
+  </p>
+{% endfor %}
+
+<form action='/graph' method='GET'>
+<button type='submit'> View Price Graph </button>
+</form>
+
+<form action='/trails' method='GET'>
+<button type='submit'> View Trail Names </button>
+</form>
+
+<form action='/' method='GET'>
+<button type='submit'> Home </button>
+</form>

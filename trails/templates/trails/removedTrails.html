@@ -1,0 +1,20 @@
+<h1> Updated Trails </h1>
+{% for trail in removeTrail %}
+  <li>{{ trail }}</li>
+{% endfor %}
+
+<style>
+  body{
+    background-image: url('https://media.istockphoto.com/photos/hiking-trail-in-boulder-colorado-picture-id155419678');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+
+<form action='/removeTrail' method='GET'>
+<button type='submit'> Change Removed Trail </button>
+</form>
+
+<form action='/' method='GET'>
+<button type='submit'> Home </button>
+</form>

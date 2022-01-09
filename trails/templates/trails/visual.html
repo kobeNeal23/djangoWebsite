@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<h1>Binocular Prices vs Binocular Count</h1>
+<html>
+  <head>
+    <title>Binocular Prices</title>
+  </head>
+  <body>
+    {% autoescape off %}
+      {{ plot_div }}
+    {% endautoescape %}
+  </body>
+
+  <form action='/binocs' method='GET'>
+  <button type='submit'> View Binocular Names / Prices</button>
+  </form>
+
+  <form action='/' method='GET'>
+  <button type='submit'> Home </button>
+  </form>
+</html>

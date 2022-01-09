@@ -1,0 +1,26 @@
+<form method="post" action="">
+  {% csrf_token %}
+  <table>
+    <tr>
+      <td>{{ form.username.label_tag }}</td>
+      <td>{{ form.username }}</td>
+    </tr>
+    <tr>
+      <td>{{ form.password.label_tag }}</td>
+      <td>{{ form.password }}</td>
+    </tr>
+  </table>
+  <input type="submit" value="Login" />
+</form>
+
+<form action='/' method='GET'>
+<button type='submit'> Home </button>
+</form>
+
+<style>
+  body{
+    background-image: url('https://media.istockphoto.com/photos/hiking-trail-in-boulder-colorado-picture-id155419678');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
